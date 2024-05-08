@@ -1,0 +1,22 @@
+mport numpy as np
+
+# 定义给定的旋转矩阵
+Φ_rr = np.array([
+    [1/2, 0, np.sqrt(3)/2],
+    [np.sqrt(6)/4, 1/np.sqrt(2), -np.sqrt(2)/4],
+    [0, 0, 0],
+])
+
+# 定义原始点的坐标
+points = np.array([
+    [0, 0, 0],
+    [1, 0, 0],
+    [0, 0, 0],
+    [0, 0, 1],
+])
+
+# 应用旋转矩阵到原始点
+transformed_points = np.dot(points, Φ_rr)
+
+# 打印变换后的点的坐标
+print(transformed_points)
