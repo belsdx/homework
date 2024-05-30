@@ -30,7 +30,7 @@ chords = [((10, -103), (10, -356))]
 
 
 def is_convex_division(polygon, chord):
-    # 这里应该是您的算法
+    
     pass
 
 
